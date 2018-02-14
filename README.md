@@ -12,7 +12,8 @@ Building libqglviewer
 ==================================
 
 ```
-conda build conda/ -c openalea
+cd conda/
+conda build . -c openalea
 ```
 
 

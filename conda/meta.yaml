@@ -18,17 +18,16 @@ build:
     - vc9               [win and py27]
     - vc10              [win and py34]
     - vc14              [win and py35]
+    - vc14              [win and py36]
 
 requirements:
   build:
-    - qt 4.8.6 [osx]
-    - qt 4.8.7 [linux]
+    - qt <5
 
   run:
     # python dependency is here due to libboost-python library that depends on
     # python version
-    - qt 4.8.6 [osx]
-    - qt 4.8.7 [linux]
+    - qt <5
 
 about:
   home: http://www.libqglviewer.com
