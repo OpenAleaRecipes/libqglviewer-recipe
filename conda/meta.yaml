@@ -11,25 +11,20 @@ source:
    - examples.pri.patch
    - libQGLViewer.pro.patch
 
-
 build:
   number: 1
   features:
-    - vc9               [win and py27]
-    - vc10              [win and py34]
-    - vc14              [win and py35]
-    - vc14              [win and py36]
+    - vc14 [win]
 
 requirements:
   build:
-    - qt <5
-
+    - qt
+    - patch
   run:
     # python dependency is here due to libboost-python library that depends on
     # python version
-    - qt <5
+    - qt
 
 about:
   home: http://www.libqglviewer.com
   license: GPL
-
