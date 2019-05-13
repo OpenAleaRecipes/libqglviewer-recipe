@@ -14,16 +14,17 @@ source:
 build:
   number: 1
   features:
-    - vc14 [win]
+    - vc8     [win and py27]
+    - vc14    [win and py37]
 
 requirements:
   build:
-    - qt
+    - qt =5
     - patch
   run:
-    # python dependency is here due to libboost-python library that depends on
-    # python version
-    - qt
+    - qt =5
+    - vs2015_runtime   [win and py37]
+    - vs2008_runtime   [win and py27]
 
 about:
   home: http://www.libqglviewer.com
