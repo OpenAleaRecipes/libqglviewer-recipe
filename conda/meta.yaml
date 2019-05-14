@@ -14,17 +14,18 @@ source:
 build:
   number: 1
   features:
-    - vc8     [win and py27]
+    - vc9     [win and py27]
     - vc14    [win and py37]
 
 requirements:
   build:
+    - python
     - qt =5
     - patch
   run:
     - qt =5
-    - vs2015_runtime   [win and py37]
     - vs2008_runtime   [win and py27]
+    - vs2015_runtime   [win and py37]
 
 about:
   home: http://www.libqglviewer.com
