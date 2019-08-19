@@ -1,8 +1,5 @@
-
 mkdir build
 cd build
-
-set QMAKESPEC="win32-msvc2008"
 
 qmake PREFIX=%LIBRARY_PREFIX% NO_QT_VERSION_SUFFIX=1 ../libQGLViewer.pro
 
